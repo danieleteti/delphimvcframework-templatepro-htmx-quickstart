@@ -1,0 +1,13 @@
+{{extends "_layout.html"}}
+
+{{block "body"}}
+<h2>DMVCFramework - TemplatePro - HTMX <small>with Bootstrap</small></h2>
+
+<form hx-get = "/reversedstrings" hx-target="#result">
+    <input type="text" name="value" placeholder="Write something here...">
+    <button type="submit">Reverse it!</button>
+</form>
+<div id="result">
+
+</div>
+{{endblock}}
