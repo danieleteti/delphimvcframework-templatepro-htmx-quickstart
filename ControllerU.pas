@@ -34,7 +34,8 @@ end;
 
 function TMyController.GetReversedString(const Value: String): String;
 begin
-  Result := System.StrUtils.ReverseString(Value.Trim);
+  ViewData['reversed_string'] := System.StrUtils.ReverseString(Value.Trim);
+  Result := Page('partials/reversed');
 end;
 
 end.

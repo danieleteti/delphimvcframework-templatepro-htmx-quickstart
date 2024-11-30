@@ -6,10 +6,10 @@
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
-        <ProjectName Condition="'$(ProjectName)'==''">html_incremental</ProjectName>
+        <ProjectName Condition="'$(ProjectName)'==''">dmvcframework_templatepro_htmx_quickstart</ProjectName>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Console</AppType>
-        <MainSource>html_incremental.dpr</MainSource>
+        <MainSource>dmvcframework_templatepro_htmx_quickstart.dpr</MainSource>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -69,7 +69,7 @@
         <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
         <DCC_UnitSearchPath>$(DMVC);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <DCC_Framework>FMX;$(DCC_Framework)</DCC_Framework>
-        <SanitizedProjectName>html_incremental</SanitizedProjectName>
+        <SanitizedProjectName>dmvcframework_templatepro_htmx_quickstart</SanitizedProjectName>
         <VerInfo_Locale>1040</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
@@ -145,7 +145,7 @@
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">html_incremental.dpr</Source>
+                    <Source Name="MainSource">dmvcframework_templatepro_htmx_quickstart.dpr</Source>
                 </Source>
                 <Excluded_Packages>
                     <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\JvAppFrmDesign290.bpl">JVCL Application and Form Components</Excluded_Packages>
@@ -207,9 +207,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Win32\Debug\html_incremental.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="bin\dmvcframework_templatepro_htmx_quickstart.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteName>html_incremental.exe</RemoteName>
+                        <RemoteName>dmvcframework_templatepro_htmx_quickstart.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

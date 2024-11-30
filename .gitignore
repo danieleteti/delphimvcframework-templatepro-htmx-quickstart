@@ -80,3 +80,4 @@ __recovery/
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
 html_incremental.res
+dmvcframework_templatepro_htmx_quickstart.res

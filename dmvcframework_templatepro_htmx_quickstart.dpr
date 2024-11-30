@@ -1,4 +1,4 @@
-program html_incremental;
+program dmvcframework_templatepro_htmx_quickstart;
 
 {$APPTYPE CONSOLE}
 

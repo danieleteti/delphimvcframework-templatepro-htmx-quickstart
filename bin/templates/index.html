@@ -1,13 +1,33 @@
 {{extends "_layout.html"}}
 
 {{block "body"}}
-<h2>DMVCFramework - TemplatePro - HTMX <small>with Bootstrap</small></h2>
 
-<form hx-get = "/reversedstrings" hx-target="#result">
-    <input type="text" name="value" placeholder="Write something here...">
-    <button type="submit">Reverse it!</button>
-</form>
-<div id="result">
-
+<div class="row">
+    <div class="col">
+        <div class="text-center mt-5">
+            <h1>DMVCFramework + TemplatePro + HTMX</h1>
+            <p class="lead">A complete project boilerplate built with Bootstrap</p>
+            <p>Bootstrap v5.3.3</p>
+        </div>
+    </div>
 </div>
+
+<div class="row mt-5">
+    <div class="col col-3 offset-3">
+        <div class="mb-3">
+            <input type="text" name="value" class="form-control" id="exampleFormControlInput1" placeholder="Write something here" value="Hello World">
+        </div>
+    </div>
+    <div class="col col-2">
+        <button type="button" hx-get="/reversedstrings" hx-include='input' hx-target="#result" class="btn btn-primary">Reverse it!</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-5 offset-3">
+        <div id="result" class="alert alert-primary" role="alert">
+            {{include "partials/reversed.html"}}
+        </div>
+    </div>
+</div>
+
 {{endblock}}
