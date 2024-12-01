@@ -34,7 +34,8 @@ uses
   MVCFramework.Middleware.Trace,
   MVCFramework.Middleware.CORS,
   MVCFramework.Middleware.ETag,
-  MVCFramework.Middleware.Compression, ControllerU;
+  MVCFramework.Middleware.Compression, 
+  ControllerU;
 
 procedure TMyWebModule.WebModuleCreate(Sender: TObject);
 begin
@@ -80,7 +81,7 @@ begin
   // Serializers - END
 
   // Middleware
-  fMVC.AddMiddleware(TMVCStaticFilesMiddleware.Create('/assets', 'assets', '', False));
+  fMVC.AddMiddleware(TMVCStaticFilesMiddleware.Create('/assets', TPath.Combine(ExtractFilePath(GetModuleName(HInstance)), 'assets'), '', False));
   // Middleware - END
 
 end;
