@@ -29,13 +29,13 @@ uses
 
 function TMyController.Index: String;
 begin
-  Result := Page('index');
+  Result := RenderView('index');
 end;
 
 function TMyController.GetReversedString(const Value: String): String;
 begin
   ViewData['reversed_string'] := System.StrUtils.ReverseString(Value.Trim);
-  Result := Page('partials/reversed');
+  Result := RenderView('partials/reversed');
 end;
 
 end.
