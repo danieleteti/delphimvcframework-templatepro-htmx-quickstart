@@ -34,6 +34,7 @@ uses
   MVCFramework.Middleware.Trace,
   MVCFramework.Middleware.CORS,
   MVCFramework.Middleware.ETag,
+  MVCFramework.Middleware.Session,
   MVCFramework.Middleware.Compression, 
   ControllerU;
 
